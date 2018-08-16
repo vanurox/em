@@ -1,0 +1,20 @@
+.one{
+    width:400px;
+    height:400px;
+    position: relative;
+    background: #f80;
+    top:50px;
+    left:50px;
+    z-index: 1;
+    border-radius:50%;
+}
+.two {
+    width: 200px;
+    height: 200px;
+    background: #f08;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    transform:rotate(30deg);
+}

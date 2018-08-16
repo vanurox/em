@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <div id="fill">
+
+    </div>
+    
+    <script>
+        // Javascript Object Notation
+        var persons = [
+            {
+                name: 'Varun',
+                gender: 'male',
+                profession: 'DEVELOPER'
+            },
+            {
+                name: 'Era',
+                gender: 'female',
+                profession: 'Student'
+            }
+        ];
+
+        // console.log(persons[0].name);
+        var elem = '';
+        for (i = 0; i < persons.length; i++) {
+            // console.log(persons[i].name);
+            elem = elem + '<div>' + persons[i].name +'</div>';
+        }
+        document.getElementById("fill").innerHTML = elem;
+    </script>
+</body>
+</html>

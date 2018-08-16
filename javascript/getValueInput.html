@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Get value from Input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    Enter Email:- <input type="email" id="email"><span id="validate_email"></span> <br>
+    <button onclick="validateEmail()">Validate Email</button>
+    <script>
+        function validateEmail(){
+            // console.log("Email validation called");
+            // var email = document.getElementById("email");
+         
+            // data type checking using ===
+            // var a = 10;
+            // var b = 10;
+            // if(a === b){
+            //     console.log("equals");
+            // }else{
+            //     console.log("not equal");
+            // }
+            
+            if(email.value == ""){
+                // console.log("Email is empty");
+                validate_email.innerHTML = "Email is empty";
+            }else{
+                // console.log("ok");
+                validate_email.innerHTML = "Ok";
+            }
+        }
+    </script>
+</body>
+</html>
