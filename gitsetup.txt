@@ -1,0 +1,12 @@
+git init
+git remote add origin git@something.com/repositoryname.git
+git add .
+git commit -m"message regarding the commit or the work that we have done "
+git push -u origin master // this will push master branch on origin 
+
+
+afterwards step require beneath commands only
+
+git add .
+git commit -m"message"
+git push

@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Get Value from input box</title>
+    <title>Dynamic HTML</title>
 </head>
 <body>
-    Added file in git    
+
+    <div id="fill"></div>
+
+
+    <script>
+        var books = ["c","c++","operating system", "java"];
+        books.forEach(function(v,i){
+            // var elem = "<p>"+v+"</p>";
+            var elem = `<p>${v}</p>`;
+            document.getElementById("fill").innerHTML += elem;
+        });
+    </script>
 </body>
 </html>
